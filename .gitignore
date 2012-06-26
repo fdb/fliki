@@ -1,0 +1,8 @@
+# Virtualenv files
+bin
+include
+lib
+.Python
+
+# Mac cruft
+.DS_Store

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fliki</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Fliki</h1>
+  </header>
+  <nav>
+    <a href="/wiki">Home</a>
+    <a href="/wiki/all">All Pages</a>
+  </nav>
+  <div id="content">
+    {% block content %}{% endblock %}
+  </div>
+  <footer>
+    {% block actions %}
+    {% endblock %}
+  </footer>
+</body>
+</html>
