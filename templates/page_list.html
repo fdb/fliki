@@ -5,7 +5,7 @@
 <h1>All Pages</h1>
 <ul>
   {% for page in pages %}
-    <li><a href="/wiki/{{ page }}">{{ page }}</a></li>
+    <li><a href="/{{ page }}">{{ page|humanize }}</a></li>
   {% endfor %}
 </ul>
 

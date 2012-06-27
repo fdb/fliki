@@ -1,14 +1,16 @@
 # Welcome
-Welcome to my awesome Wiki!!!
 
-Visit my collection of [dogs](/wiki/dogs)
+This is Fliki, a simple proof-of-concept wiki built in [Flask](http://flask.pocoo.org).
 
-Visit my page on [trains](/wiki/trains).
+# Example pages
 
+Here are some example pages to get you started:
 
-# Future Events
+* [Lorem Ipsum](/lorem-ipsum): Example page with dummy content.
+* [Meaning of Life](/meaning-of-life): Example of a page that does not exist yet.
 
-* [2012-05-01](/wiki/steamroller): Steamroller conference
-* [2012-05-01](/wiki/steamroller): Steamroller conference
-* [2012-05-01](/wiki/steamroller): Steamroller conference
-* [2012-05-01](/wiki/steamroller): Steamroller conference
+# Customizing the wiki
+
+* Change the HTML code of this wiki by looking at `templates/base.html`.
+* Change the stylesheet in `static/css/style.css`.
+* Change the code in `fliki.py`.

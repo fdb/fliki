@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <title>Fliki</title>
+  <link rel="shortcut icon" href="{{ url_for("static", filename="favicon.ico") }}">
   <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
@@ -9,8 +11,8 @@
     <h1>Fliki</h1>
   </header>
   <nav>
-    <a href="/wiki">Home</a>
-    <a href="/wiki/all">All Pages</a>
+    <a href="/">Home</a>
+    <a href="/all-pages">All Pages</a>
   </nav>
   <div id="content">
     {% block content %}{% endblock %}
