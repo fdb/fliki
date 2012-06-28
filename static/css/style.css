@@ -3,6 +3,9 @@ body {
     font: 13px/20px arial,sans-serif;
     height: 100%;
     margin: 0;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5em;
 }
 
 #container {
@@ -51,10 +54,8 @@ nav a {
     width: 900px;
     margin: 20px auto 0 auto;
     padding: 30px 20px 20px 20px;
-        background: white;
-        border: 1px solid #ccc;
-    /box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-
+    background: white;
+    border: 1px solid #ccc;
 }
 
 #content h1 {
