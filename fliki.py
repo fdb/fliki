@@ -36,8 +36,8 @@ def page_edit(page_name):
         if _page_exists(page_name):
             text = _read_page(page_name)
         else:
-            text = "# %s\n\nThis page does not exist yet. Replace this content and click Save to create it." % _page_name_to_human_name(page_name)
-        return render_template("page_edit.html", text=text)
+            text = "# %s\n\nThis page does not exist yet. Replace this content and click Save to create it." % humanize(page_name)
+        return render_template("page_edit.html", text=text, page_name=page_name)
     else:
         text = request.form["text"]
         _write_page(page_name, text)

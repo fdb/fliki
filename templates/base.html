@@ -7,19 +7,23 @@
   <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Fliki</h1>
-  </header>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/all-pages">All Pages</a>
-  </nav>
-  <div id="content">
-    {% block content %}{% endblock %}
+  <div id="container">
+    <header>
+      <h1>Fliki</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/all-pages">All Pages</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content">
+      {% block content %}{% endblock %}
+      <div id="actions">{% block actions %}{% endblock %}</div>
+    </div>
+    <footer>
+      Built with Fliki.
+    </footer>
   </div>
-  <footer>
-    {% block actions %}
-    {% endblock %}
-  </footer>
 </body>
 </html>
